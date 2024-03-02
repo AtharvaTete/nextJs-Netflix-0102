@@ -162,7 +162,7 @@ export default function MediaItem({
               media?.addedToFavorites
                 ? listView
                   ? () => handleRemoveFavorite(media)
-                  : null
+                  : null 
                 : () => handleAddToFavorite(media)
             }
             className={` ${
@@ -191,5 +191,6 @@ export default function MediaItem({
         </div>
       </div>
     </motion.div>
+    
   );
 }
